@@ -96,3 +96,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.icloud
+
+### application.properties
+application.properties
