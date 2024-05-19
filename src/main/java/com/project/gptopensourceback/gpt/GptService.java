@@ -18,7 +18,7 @@ public class GptService {
         String url = "https://api.openai.com/v1/chat/completions";
 
         GptRequest.Message userMessage = new GptRequest.Message("user", prompt);
-        GptRequest request = new GptRequest("gpt-4", Collections.singletonList(userMessage));
+        GptRequest request = new GptRequest("gpt-4o", Collections.singletonList(userMessage));
         HttpEntity<GptRequest> entity = new HttpEntity<>(request);
 
         try {
