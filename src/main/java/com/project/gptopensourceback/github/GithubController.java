@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class GithubController {
 
-    private final GithubService githubService;
+    private final GithubServiceImpl githubServiceImpl;
 
     @GetMapping("/users/{username}/repos")
     public String listUserRepositories(@PathVariable("username") String username) {
-        return githubService.listRepositories(username);
+        return githubServiceImpl.listRepositories(username);
     }
 }
